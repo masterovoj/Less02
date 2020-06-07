@@ -3,7 +3,7 @@ main {
   max-width: 1440px;
   height: 1700px;
   background: url("../img/Lines.png") 108px 142px no-repeat, #e8e8e8;
-  margin: 30px auto;  
+  margin: 20px auto;  
 }
 
 .container {
