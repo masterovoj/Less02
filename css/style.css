@@ -1,0 +1,44 @@
+main {
+  max-width: 1440px;
+  height: 1700px;
+  background: url("../img/Lines.png") 108px 142px no-repeat, #e8e8e8;
+  margin: 20px auto;  
+}
+
+.container {
+   width: 1190px;
+   margin: 106px 108px;
+   border: 1px solid black;
+  }
+
+.title {
+  opacity: 0.6;
+  font-family: ArialMT;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #273d46;
+  margin-top: 62px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: TimesNewPSMT;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #273d46;
+  text-align: center;
+  width: 721px;
+  margin: 28px auto;
+}
+
+.picter {
+  box-shadow: 7px 13px 65px 0px rgba(15,15,16,0.15);
+  width: 935px;
+  height: 655px;
+  
+}
+
