@@ -39,7 +39,23 @@ main {
 
 .picter {
   box-shadow: 7px 13px 65px 0px rgba(15,15,16,0.15);
-  width: 935px;
-  height: 655px;
+  width: 821px;
+  height: 541px;
+  background-color: white;
+  background-image: url("../img/light_man_copy_26.png");
+  border: 7px solid white;
+  margin-top: 87 px;
+  margin-left: 157px;
 }
 
+.text {
+  width: 736px;
+  opacity: 0.8;
+  font-family: TimesNewPSMT;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #273d46;
+  margin-top: 107px;
+  margin-left: 192px;
+}
