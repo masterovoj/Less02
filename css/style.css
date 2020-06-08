@@ -1,15 +1,10 @@
 main {
-  position: relative;
-  max-width: 1440px;
-  height: 1700px;
-  background: url("../img/Lines.png") 108px 142px no-repeat, #e8e8e8;
-  margin: 20px auto;  
+  background: url("../img/Lines.png") 50% 135px no-repeat, #e8e8e8; 
 }
 
 .container {
-  position: absolute;
-   width: 1190px;
-   margin: 106px 108px;
+  max-width: 841px;
+  margin: 0 auto;  
   }
 
 .title {
@@ -21,7 +16,7 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #273d46;
-  margin-top: 62px;
+  padding-top: 168px;
   text-align: center;
 }
 
@@ -44,7 +39,6 @@ main {
   background-image: url("../img/light_man_copy_26.png");
   border: 7px solid white;
   margin-top: 87 px;
-  margin-left: 157px;
 }
 
 .text {
@@ -55,13 +49,13 @@ main {
   line-height: 40px;
   font-weight: 400;
   color: #273d46;
-  margin-top: 107px;
-  margin-left: 192px;
+  margin: 107px auto
+  
 }
 
 .list {
   margin-top: 64px;
-  margin-left: 192px;
+  padding-left: 85px;
   list-style-image: url("../img/check_icon.png");
 }
 
@@ -117,14 +111,15 @@ main {
   width: 199px;
   height: 44px;
   border-radius: 25px;
-  margin-left: 195px;
+  margin-left: 55px;
   margin-top: 29px;
-  margin-bottom: 97px;
   background: url("../img/shape.png") 165px 13px  no-repeat, url("../img/rectangle.png") center no-repeat;
   box-shadow: none;
   box-shadow: 0px 6px 40px #80B7B38A;
   opacity: 1;
-  opacity: 0.8;
-  
-    
+  opacity: 0.8;    
+}
+
+.buben {
+  padding-top: 154px;
 }
