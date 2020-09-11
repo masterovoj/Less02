@@ -2,55 +2,253 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Less 9. CSS свойство background.</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок №2. Знакомство с Html тегами</title>
 </head>
 
 <body>
-	<!-- * оболочка страницы начало -->
-	<main>
-		<!-- * оболочка основного контента -->
-		<div class="container">
 
-			<!-- * титл сайта -->
-			<div class="title"><p>Travel</p></div>
+    <!-- ? Хочу оформить урок покрасивее, без использования CSS стилей. К сожалению, придется использовать устаревшие HTML свойства таблиц -->
 
-			<!-- * субтитл сайта -->
-			<div class="subtitle">
-				<p>Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.</p>
-			</div>
+    <!-- * Шапка страницы header -->
+    <div class="header">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <!-- * Верхняя часть -->
+                <td width="20%" align="center" bgcolor="#052535">
+                    <!-- * Простите Евгенний за использование картинки, если нельзя, удалю -->
+                    <img width="200" src="img/like.png" alt="Картинка Евгения">
+                </td>
+                <td width="80%" bgcolor="#052535">
+                    <font size="5" color="white" face="Arial">Урок №2. Знакомство с HTML тегами.</font>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-			<!-- * картинка сайта -->
-			<div class="picter"></div>
 
-			<!-- * описание сайта -->
-			<div class="text">
-				<p>Donec aredsed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. <br>
-				Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatisvestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quamvenenatis vestibulum.</p>
-			</div>
 
-			<!-- * список сайта -->
-			<ul class="list">
-				<li class="item_1">Put on this page information about your product</li>
-				<li class="item_2">A detailed description of your product</li>
-				<li class="item_3">Tell us about the advantages and merits</li>
-				<li class="item_4">Associate the page with the payment system</li>	
-			</ul>
 
-			<!-- * кнопа  -->
-			<div class="btn">
-				<a href="#">full story</a>
-			</div>
 
-			<!-- * заглушка для увеличения расстояния от кнопы до нижней кромки сайта -->
-			<div class="buben"></div>
-			
-		</div>
-	</main>
-	<!-- * оболочка страницы конец -->
+    <!-- * Основной контент страницы main -->
+    <main>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <!-- * Отступ слева 20% -->
+                <td width="20%" bgcolor="#052535"></td>
+
+
+                <!-- * Средняя, основная часть, в которой будет размещяться весь контент -->
+                <td width="60%">
+                    <!-- * Список описаний -->
+                    <dl id="content">
+                        <dt>
+                            <h2>Цель урока</h2>
+                        </dt>
+                        <dd>
+                            <a href="#01">Структура тегов (тег без закрывающего элемента, тег с закрывающим
+                                элементом)</a>
+                        </dd>
+                        <dd><a href="#02">Структура страницы HTML</a></dd>
+                        <dd><a href="#03">Строчные теги</a></dd>
+                        <dd><a href="#04">Блочные теги</a></dd>
+                        <dd><a href="#05">Строчно-блочные теги</a></dd>
+                    </dl>
+
+                    <!-- * Горизонтальная линия -->
+                    <hr color="black">
+
+
+                    <!-- * первый пункт описания -->
+                    <h2 id="01">Структура тегов</h2>
+
+                    <!-- * Тег без закрывающего элемента -->
+                    <p> <b>Тег без закрывающего элемента.</b> <br>
+                        <i>К таким тегам относятся теги &lt; img &gt;, &lt; br &gt;, &lt; input &gt; и т.д.</i>
+                    </p>
+                    <p>Структура записи следующая:</p>
+                    <p>
+                        <font color="green"> <i>&lt; имя_тега имя_атрибута="значение_атрибута"
+                                имя_атрибута_2="значение_атрибута_2" &gt;</i> </font>
+                    </p>
+                    <p>Пример:</p>
+                    <p>
+                        <font color="green"><i>&lt; img src="img/image.jpeg" alt="Картинка" &gt;</i></font>
+                    </p>
+
+                    <!-- * Тег с закрывающим элементом -->
+                    <p>
+                        <b>Тег с закрывающим элементом</b> <br>
+                        <i>К таким тегам относятся теги, которые имеют закрывающия элемент (такой же тег, только перед
+                            ним стоит слэш)</i>
+                    </p>
+                    <p>Структура записи следующая:</p>
+                    <p>
+                        <font color="green">
+                            <i>&lt; имя_тега имя_атрибута="значение_атрибута" &gt . . . &lt;/ имя_тега &gt;</i>
+                        </font>
+                    </p>
+                    <p>Пример:</p>
+                    <p>
+                        <font color="green">
+                            <i> &lt; H1 &gt; Заголовок 1 &lt;/H1&gt;</i>
+                        </font>
+                    </p>
+
+                    <!-- * Якорная ссылка в начало страницы -->
+                    <a href="#content">В начало страницы</a>
+
+                    <!-- * горизонтальная линия -->
+                    <hr color="black">
+
+
+                    <!-- * Второй пункт описания -->
+                    <h2 id="02">Структура страницы HTML</h2>
+                    <p><i>Страница HTML имеет определенную структуру. Для этого используются специальные теги, такие как
+                            <b>header</b> - (шапка страницы), <b>nav</b> - (навигационная панель), <b>main</b> -
+                            (основной раздел страницы, где распологается основной контент и <b>footer</b> - подвал
+                            страницы.</i></p>
+
+                    <!-- * Пример структуры страницы. Завернул текст в таблицу -->
+                    <table>
+                        <caption><b>Пример структуры страницы:</b>
+                        </caption>
+                        <tr>
+                            <td bgcolor="black">
+                                <font color="green" size="4">
+                                    &lt;!-- Шапка сайта header --&gt; <br>
+                                    &lt; header class="header" &gt; <br>
+                                    <br>
+                                    &lt;!-- Навигация сайта - блок nav --&gt; <br>
+                                    &lt; nav class="navigation" &gt; <br>
+                                    &lt;/nav &gt; <br>
+                                    <br>
+                                    &lt;/ header &gt; <br>
+                                    <br>
+                                    &lt;!-- Тело сайта main -- &gt;<br>
+                                    &lt; main &gt;<br>
+                                    <br>
+                                    &lt; div class="" tatle="Я подсказка" &gt;<br>
+                                    <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <br> Veritatis delectus aspernatur eligendi nobis distinctio
+                                    <br> corporis iure dolore pariatur aut. Perspiciatis reprehenderit <br>
+                                    r illum eius quis a libero autem porro officia est. <br>
+                                    <br>
+                                    &lt;/ div &gt; <br>
+                                    <br>
+                                    &lt;/ main &gt; <br>
+                                    <br>
+                                    &lt;!-- Подвал страницы -- &gt;<br>
+                                    &lt; footer &gt;<br>
+                                    <br>
+                                    &lt;/ footer &gt; <br><br>
+                                </font>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- * Возврат в начало страницы -->
+                    <a href="#content">В начало страницы</a>
+                    <hr color="black">
+
+
+                    <!-- * Третий пункт описания -->
+                    <h2 id="03">Строчные теги</h2>
+                    <p><b>Строчные теги</b> <i>- это теги, которые занимают столько места, сколько их размер, а не
+                            целиком строку. Строчные теги при написании один за другим, будут располагаться рядом и не
+                            выталкивают друг друга на новую строку.</i></p>
+                    <p>Пример строчных тегов:</p>
+                    <p>
+                        <font color="green">
+                            <i>
+                                &lt;!-- гиперссылка &lt; a &gt; --&gt;<br>
+                                &lt; a tadget="_blank" href="http://google.com" &gt; Текст ссылки (анкор) &lt;/ a &gt;
+                                <br>
+                                <br>
+                                &lt;!-- Тег для выделения чего-либо - &lt; span &gt; --&gt; <br>
+                                &lt; p &gt; Lorem ipsum dolor sit amet <font color="blue">&lt; span &gt; consectetur
+                                    &lt;/ span &gt;</font> adipisicing elit. &lt;/ p &gt;
+                            </i>
+                        </font>
+                    </p>
+                    <a href="#content">В начало страницы</a><br>
+                    <hr color="black">
+
+
+                    <!-- * Четвертый пункт описания -->
+                    <h2 id="04">Блочные теги</h2>
+                    <p><b>Блочные теги</b><i>- это теги, которые независимо от своего размера, занимают всю строку
+                            полностью на странице. Блочные теги не могут располагаться рядом в одной строке. Они
+                            обязательно будут выталкивать друг друга на новую строку.</i></p>
+                    <h2>Пример блочных тегов:</h2>
+                    
+                        <!-- * Заголовки  -->
+                        <h3>Заголовки H2...H6</h3>
+                        <h2>Я заголовок 2 уровня</h2>
+                        <h3>Я заголовок 3 уровня</h3>
+                        <h4>Я заголовок 4 уровня</h4>
+
+                        <!-- * Маркированный список ul -->
+                        <h3>Маркированный список &lt; ul &gt;</h3>
+                        <ul>
+                            <li>Элемент списка №1</li>
+                            <li>Элемент списка №2</li>
+                            <li>Элемент списка №3</li>
+                            <li>Элемент списка №4</li>
+                        </ul>
+
+                        <!-- *  Нумированный список ol -->
+                        <h3>Нумированный список &lt; ol &gt;</h3>
+                        <ol>
+                            <li>Элемент списка №1</li>
+                            <li>Элемент списка №2</li>
+                            <li>Элемент списка №3</li>
+                            <li>Элемент списка №4</li>
+                        </ol>
+                    
+
+                    <!-- * возврат в начало страницы -->
+                    <a href="#content">В начало страницы</a><br>
+                    <hr color="black">
+
+
+                    <!-- * Пятый пункт описания -->
+                    <h2 id="05">Строчно-блочные теги</h2>
+                    <p><b>Строчно-блочные теги</b><i>- это теги, к которым применимы свойства как принадлежащие блочным тегам, так и строчным тегам</i></p>
+                    <p>Пример строчно блочного тега - тег &lt; img &gt;</p>
+                    <img src="/img/1.jpg" alt="Картинка"><br>
+
+                    <!-- * возврат в начало страницы -->
+                    <a href="#content">В начало страницы</a><br>
+                    <hr color="black">
+                </td>
+
+                <!-- * Отступ справа 20% -->
+                <td width="20%" bgcolor="#052535"></td>
+            </tr>
+        </table>
+    </main>
+
+
+
+
+
+    <!-- * Подвал страницы footer -->
+    <footer>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <!-- * нижняя часть -->
+                <td bgcolor="#052535">
+                    <font color="gray">
+                        <h6>Исполнитель ДЗ: Сычев Дмитрий</h6>
+                        <h6>mail: verstakmaster@mail.ru</h6>
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </footer>
 </body>
 
 </html>
